@@ -1,0 +1,42 @@
+{
+  "name": "sparrow",
+  "version": "1.0.0",
+  "description": "library",
+  "main": "lib/sparrow.js",
+  "scripts": {
+    "dev": "webpack --progress --colors --watch --mode=development",
+    "build": "webpack --mode=production",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test": "mocha --require babel-register -w --colors ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangjianguo1500/library.git"
+  },
+  "keywords": [
+    "es6",
+    "webpack",
+    "sparrow"
+  ],
+  "author": "zhangjianguo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangjianguo1500/library/issues"
+  },
+  "homepage": "https://github.com/zhangjianguo1500/library#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.0.2",
+    "eslint": "^4.0.0",
+    "eslint-loader": "^1.7.1",
+    "install": "^0.10.1",
+    "mocha": "^3.4.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1",
+    "yargs": "^8.0.2"
+  }
+}
